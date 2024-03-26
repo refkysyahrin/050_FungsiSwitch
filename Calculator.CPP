@@ -12,22 +12,22 @@ void input ()
 }
 
 
-int penjumlahan (int a, int b,)
+int penjumlahan (int a, int b)
 {
     return a + b;
 }
 
-int pengurangan (int a, int b,)
+int pengurangan (int a, int b)
 {
     return a - b;
 }
 
-int perkalian (int a, int b,)
+int perkalian (int a, int b)
 {
     return a * b;
 }
 
-float pembagian (float a, float b,)
+float pembagian (float a, float b)
 {
     return a / b;
 }
@@ -49,17 +49,33 @@ int main()
         cin >> pilihan;
 
         switch (pilihan)
-    {
+        {
+         case 1:
+            input();
+            cout << "Hasil Penjumlahan = " << penjumlahan(bilA, bilB) << endl;
+            break;
+        case 2:
+            input();
+            cout << "Hasil Penjumlahan = " << pengurangan(bilA, bilB) << endl;
+            break;
+         case 3:
+            input();
+            cout << "Hasil Penjumlahan = " << perkalian(bilA, bilB) << endl;
+            break;
+        case 4:
+            input();
+            cout << "Hasil Penjumlahan = " << pembagian(bilA, bilB) << endl;
+            break;
+         case 5:
+            break;
+         default:
+            cout << "Pilihan anda salah " << endl;
+            break;
 
-    }
+        }
 
-       
+        system ("pause");
+        system ("CLS");
 
-    }
-     
-
-    
-
-
-} while (/* condition */);
-
+    }while (pilihan !=5);
+} 
